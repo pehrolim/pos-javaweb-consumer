@@ -15,7 +15,7 @@ public class Disciplina implements Serializable {
 
     private String professor;
 
-    private String statusDisciplina;
+    private StatusDisciplina statusDisciplina;
 
     private String observacao;
 
