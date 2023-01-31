@@ -18,8 +18,6 @@ public class ActiveMQConfig {
     @Value("${spring.activemq.password}")
     String BROKER_PASSWORD;
 
-
-
     @Bean
     public ConnectionFactory connectionFactory(){
         ActiveMQConnectionFactory activeMQConnectionFactory  = new ActiveMQConnectionFactory();
@@ -29,7 +27,6 @@ public class ActiveMQConfig {
         activeMQConnectionFactory.setTrustAllPackages(true);
         return  activeMQConnectionFactory;
     }
-
 
     @Bean
     public JmsTemplate jmsTemplate(){
